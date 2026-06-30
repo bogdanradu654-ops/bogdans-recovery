@@ -1,0 +1,117 @@
+import Image from 'next/image';
+import { Phone, MapPin, Clock, ShieldCheck, Star, Truck, Wrench, Route, CheckCircle2 } from 'lucide-react';
+
+const phone = '07776 462219';
+const phoneHref = 'tel:07776462219';
+
+const services = [
+  ['Vehicle Recovery', 'Safe recovery for cars and vans with a professional transport setup.'],
+  ['Breakdown Assistance', 'Fast help when your vehicle will not start or cannot be driven.'],
+  ['Accident Recovery', 'Careful loading and transport after minor accident damage.'],
+  ['Vehicle Transport', 'Point-to-point vehicle movement around Mansfield and nearby areas.'],
+];
+
+export default function Home() {
+  return (
+    <main>
+      <section className="hero" id="home">
+        <div className="noise" />
+        <nav className="nav">
+          <div className="brand">
+            <span className="brandMark">BR</span>
+            <span>Bogdan&apos;s Recovery Ltd</span>
+          </div>
+          <div className="navLinks">
+            <a href="#services">Services</a>
+            <a href="#coverage">Coverage</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <a className="navCall" href={phoneHref}><Phone size={18}/> {phone}</a>
+        </nav>
+
+        <div className="heroGrid">
+          <div className="heroText">
+            <p className="eyebrow"><span /> 24/7 Recovery • Mansfield & Surrounding Areas</p>
+            <h1>Professional vehicle recovery when you need it most.</h1>
+            <p className="lead">Bogdan&apos;s Recovery Ltd provides dependable towing, recovery and vehicle transport with a clean, serious image built for trust.</p>
+            <div className="heroActions">
+              <a className="primaryBtn" href={phoneHref}><Phone size={22}/> CALL NOW — {phone}</a>
+              <a className="secondaryBtn" href="#services">View services</a>
+            </div>
+            <div className="trustRow">
+              <div><strong>WeTow-YouGo</strong><span>Fast response</span></div>
+              <div><strong>Keeping Mansfield Moving</strong><span>Local recovery</span></div>
+              <div><strong>40 mile radius</strong><span>Coverage area</span></div>
+            </div>
+          </div>
+          <div className="heroVisual">
+            <div className="plate">BLACK TOUAREG • CAR TRAILER • RECOVERY</div>
+            <Image src="/recovery-hero.svg" alt="Black recovery vehicle with car trailer" width={1600} height={900} priority />
+          </div>
+        </div>
+      </section>
+
+      <section className="strip">
+        <div><Clock/> 24/7 availability</div>
+        <div><ShieldCheck/> Insured professional service</div>
+        <div><MapPin/> Mansfield based</div>
+        <div><Star/> Reliable local operator</div>
+      </section>
+
+      <section className="section" id="services">
+        <div className="sectionHead">
+          <p className="eyebrow"><span /> What we do</p>
+          <h2>Recovery services with a strong, professional presence.</h2>
+        </div>
+        <div className="cards">
+          {services.map(([title, text], i) => (
+            <article className="card" key={title}>
+              <div className="iconBox">{i === 0 ? <Truck/> : i === 1 ? <Wrench/> : i === 2 ? <ShieldCheck/> : <Route/>}</div>
+              <h3>{title}</h3>
+              <p>{text}</p>
+            </article>
+          ))}
+        </div>
+      </section>
+
+      <section className="split" id="coverage">
+        <div>
+          <p className="eyebrow"><span /> Coverage</p>
+          <h2>Mansfield based. Ready for local call-outs.</h2>
+          <p className="bodyText">Clear communication, careful loading and a reliable recovery service across Mansfield and surrounding towns.</p>
+          <ul className="ticks">
+            <li><CheckCircle2/> Mansfield</li>
+            <li><CheckCircle2/> Nottinghamshire</li>
+            <li><CheckCircle2/> Around 40 miles coverage</li>
+            <li><CheckCircle2/> Cars, vans and non-running vehicles</li>
+          </ul>
+        </div>
+        <div className="quoteBox">
+          <p className="quote">“When your vehicle lets you down, we help get you moving again.”</p>
+          <div className="miniBrand">WeTow-YouGo</div>
+          <a className="primaryBtn full" href={phoneHref}><Phone size={22}/> Call {phone}</a>
+        </div>
+      </section>
+
+      <section className="reviews">
+        <div className="reviewCard"><div className="stars">★★★★★</div><p>Fast response, professional attitude and careful transport.</p></div>
+        <div className="reviewCard"><div className="stars">★★★★★</div><p>Reliable recovery service around Mansfield. Clear price and good communication.</p></div>
+        <div className="reviewCard"><div className="stars">★★★★★</div><p>Arrived quickly and treated the vehicle properly from loading to delivery.</p></div>
+      </section>
+
+      <section className="contact" id="contact">
+        <div>
+          <p className="eyebrow"><span /> Contact</p>
+          <h2>Need recovery now?</h2>
+          <p>Call Bogdan&apos;s Recovery Ltd directly for urgent towing, recovery or vehicle transport.</p>
+        </div>
+        <a className="megaCall" href={phoneHref}><Phone/> {phone}</a>
+      </section>
+
+      <footer>
+        <strong>Bogdan&apos;s Recovery Ltd</strong>
+        <span>WeTow-YouGo • Keeping Mansfield Moving</span>
+      </footer>
+    </main>
+  );
+}
