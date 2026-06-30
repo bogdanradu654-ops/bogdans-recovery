@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-label="Black VW Touareg with TA-NO recovery trailer">
+  <defs>
+    <radialGradient id="glow" cx="56%" cy="34%" r="55%">
+      <stop offset="0" stop-color="#ffd000" stop-opacity=".55"/>
+      <stop offset=".45" stop-color="#ffb800" stop-opacity=".18"/>
+      <stop offset="1" stop-color="#000" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="metal" x1="0" x2="1"><stop offset="0" stop-color="#101010"/><stop offset=".48" stop-color="#2d2d2d"/><stop offset="1" stop-color="#050505"/></linearGradient>
+    <linearGradient id="yellow" x1="0" x2="1"><stop offset="0" stop-color="#ffb800"/><stop offset=".55" stop-color="#ffe55c"/><stop offset="1" stop-color="#e0a000"/></linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="24" stdDeviation="22" flood-color="#000" flood-opacity=".75"/></filter>
+  </defs>
+  <rect width="1200" height="760" fill="#050505"/>
+  <rect width="1200" height="760" fill="url(#glow)"/>
+  <path d="M0 560 C180 510 345 545 530 518 C740 486 920 508 1200 455 L1200 760 L0 760 Z" fill="#0c0c0c"/>
+  <path d="M0 612 H1200" stroke="#ffd000" stroke-width="10" opacity=".75"/>
+  <g opacity=".32" fill="#1d1d1d"><rect x="40" y="370" width="45" height="122"/><rect x="98" y="338" width="65" height="154"/><rect x="190" y="390" width="62" height="102"/><rect x="1010" y="335" width="44" height="157"/><path d="M1070 492 V345 L1100 300 L1130 345 V492Z"/></g>
+  <g filter="url(#shadow)">
+    <!-- TA-NO trailer -->
+    <g transform="translate(575 338)">
+      <path d="M32 172 L475 126 L514 164 L78 218 Z" fill="#161616" stroke="#ffd000" stroke-width="8"/>
+      <path d="M82 142 H455 L485 174 H48 Z" fill="url(#yellow)" opacity=".92"/>
+      <path d="M110 128 H392" stroke="#f2f2f2" stroke-width="5" opacity=".6"/>
+      <rect x="345" y="82" width="118" height="64" rx="10" fill="#090909" stroke="#ffd000" stroke-width="6"/>
+      <text x="404" y="124" text-anchor="middle" font-family="Arial Black,Arial" font-size="38" fill="#ffd000">TA-NO</text>
+      <path d="M8 193 H105" stroke="#d7d7d7" stroke-width="10" stroke-linecap="round"/>
+      <circle cx="300" cy="222" r="54" fill="#050505" stroke="#d7d7d7" stroke-width="13"/>
+      <circle cx="405" cy="207" r="54" fill="#050505" stroke="#d7d7d7" stroke-width="13"/>
+      <circle cx="300" cy="222" r="22" fill="#ffd000"/><circle cx="405" cy="207" r="22" fill="#ffd000"/>
+      <rect x="36" y="198" width="80" height="14" fill="#ffd000"/>
+      <rect x="496" y="151" width="20" height="16" fill="#ff3333"/>
+    </g>
+    <!-- Touareg style SUV -->
+    <g transform="translate(105 330)">
+      <path d="M70 190 C76 115 142 68 265 60 H423 C493 61 548 105 577 175 L638 189 C666 196 686 222 689 254 L694 286 H34 L38 246 C42 217 51 199 70 190Z" fill="url(#metal)" stroke="#2f2f2f" stroke-width="5"/>
+      <path d="M162 85 H288 L270 150 H103 C116 116 137 96 162 85Z" fill="#0d1a20" stroke="#6b6b6b" stroke-width="4"/>
+      <path d="M308 84 H419 C462 88 493 113 515 151 H292Z" fill="#0d1a20" stroke="#6b6b6b" stroke-width="4"/>
+      <path d="M91 192 C153 171 273 163 391 169 C482 174 555 188 630 215" stroke="#545454" stroke-width="6" fill="none" opacity=".8"/>
+      <rect x="482" y="196" width="95" height="34" rx="17" fill="#f6f6d0" opacity=".92"/>
+      <rect x="89" y="196" width="82" height="32" rx="16" fill="#f6f6d0" opacity=".82"/>
+      <rect x="315" y="205" width="112" height="42" rx="6" fill="#080808" stroke="#c8c8c8" stroke-width="4"/>
+      <text x="371" y="233" text-anchor="middle" font-family="Arial Black,Arial" font-size="20" fill="#ffffff">TOUAREG</text>
+      <circle cx="165" cy="286" r="66" fill="#050505" stroke="#dcdcdc" stroke-width="15"/>
+      <circle cx="521" cy="286" r="66" fill="#050505" stroke="#dcdcdc" stroke-width="15"/>
+      <circle cx="165" cy="286" r="28" fill="#111" stroke="#ffd000" stroke-width="8"/>
+      <circle cx="521" cy="286" r="28" fill="#111" stroke="#ffd000" stroke-width="8"/>
+      <path d="M623 258 H724" stroke="#ffd000" stroke-width="9" stroke-linecap="round"/>
+      <ellipse cx="370" cy="306" rx="330" ry="40" fill="#000" opacity=".45"/>
+    </g>
+  </g>
+  <g transform="translate(48 54)">
+    <text x="0" y="0" font-family="Arial Black,Arial" font-size="34" fill="#ffd000">BOGDAN'S RECOVERY LTD</text>
+    <text x="0" y="42" font-family="Arial, sans-serif" font-size="22" fill="#ffffff">WeTow-YouGo • Keeping Mansfield Moving</text>
+  </g>
+</svg>
