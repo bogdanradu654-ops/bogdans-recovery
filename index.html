@@ -1,51 +1,85 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bogdan's Recovery Ltd | Vehicle Recovery Mansfield</title>
-  <meta name="description" content="Bogdan's Recovery Ltd - reliable vehicle recovery and car transport in Mansfield and surrounding areas. WeTow-YouGo. Call 07776 462219." />
+  <meta name="description" content="Bogdan's Recovery Ltd provides fast, safe and professional vehicle recovery, transport and roadside support in Mansfield and surrounding areas. Call 07776 462219." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#home"><span class="logoMark">BR</span><span>Bogdan's Recovery Ltd</span></a>
+  <div class="top-strip">
+    <span>24/7 vehicle recovery</span><span>Mansfield & surrounding areas</span><span>WeTow-YouGo</span>
+  </div>
+
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Bogdan's Recovery Ltd home">
+      <span class="brand-mark">BR</span>
+      <span><strong>Bogdan's Recovery Ltd</strong><small>Keeping Mansfield Moving</small></span>
+    </a>
     <nav>
       <a href="#services">Services</a>
       <a href="#coverage">Coverage</a>
+      <a href="#gallery">Fleet</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a class="phoneTop" href="tel:+447776462219">Call 07776 462219</a>
+    <a class="header-call" href="tel:07776462219">Call 07776 462219</a>
   </header>
 
   <main id="home">
     <section class="hero">
-      <div class="heroText">
-        <p class="eyebrow">24/7 Vehicle Recovery • Mansfield & Surrounding Areas</p>
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Professional car recovery • transport • roadside support</p>
         <h1>Fast, safe and professional vehicle recovery.</h1>
-        <p class="lead">Bogdan's Recovery Ltd helps drivers get moving again with careful recovery, transport and roadside support. <strong>WeTow-YouGo.</strong></p>
-        <div class="actions">
-          <a class="btn primary" href="tel:+447776462219">Call Now</a>
-          <a class="btn whatsapp" href="https://wa.me/447776462219" target="_blank" rel="noopener">WhatsApp</a>
+        <p class="hero-text">Bogdan's Recovery Ltd helps drivers get moving again with careful recovery, secure car transport and honest roadside support across Mansfield and nearby areas.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="tel:07776462219">Call Now</a>
+          <a class="btn whatsapp" href="https://wa.me/447776462219">WhatsApp</a>
         </div>
-        <div class="trust">
-          <span>✓ Fully professional service</span>
-          <span>✓ Car transport</span>
-          <span>✓ Friendly help</span>
+        <div class="trust-row">
+          <span>✓ Fully insured style presentation</span>
+          <span>✓ Careful vehicle loading</span>
+          <span>✓ Friendly professional service</span>
         </div>
       </div>
-      <div class="heroCard" aria-label="Recovery truck illustration">
+
+      <div class="hero-card" aria-label="Touareg and trailer illustration">
         <div class="moon"></div>
-        <div class="road"></div>
-        <div class="vehicle">
-          <div class="carBody"></div><div class="window"></div><div class="wheel w1"></div><div class="wheel w2"></div>
-        </div>
-        <div class="trailer"><div class="trailerBed"></div><div class="wheel tw"></div></div>
-        <div class="cardText">
+        <svg class="tow-svg" viewBox="0 0 780 430" role="img" aria-label="Black Volkswagen Touareg style recovery vehicle with trailer">
+          <defs>
+            <linearGradient id="carBody" x1="0" x2="1">
+              <stop offset="0" stop-color="#050910"/>
+              <stop offset="0.55" stop-color="#111b28"/>
+              <stop offset="1" stop-color="#02050a"/>
+            </linearGradient>
+            <linearGradient id="blueGlow" x1="0" x2="1">
+              <stop offset="0" stop-color="#12b7ff"/>
+              <stop offset="1" stop-color="#006aff"/>
+            </linearGradient>
+          </defs>
+          <path class="road" d="M0 360 H780 V430 H0z"/>
+          <path class="trailer" d="M448 317 H725 L765 352 H420 Z"/>
+          <path class="trailer-bed" d="M455 320 H750"/>
+          <circle class="wheel" cx="570" cy="354" r="35"/><circle class="rim" cx="570" cy="354" r="18"/>
+          <circle class="wheel" cx="685" cy="354" r="35"/><circle class="rim" cx="685" cy="354" r="18"/>
+          <path class="hitch" d="M400 328 H455"/>
+          <path class="car" d="M78 330 C88 278 125 244 184 237 L315 224 C370 220 420 251 442 305 L452 329 Z"/>
+          <path class="car-roof" d="M178 235 C210 190 258 174 314 184 C356 191 385 217 404 253 L270 249 Z"/>
+          <path class="window" d="M202 232 C226 202 256 193 295 199 L282 248 L176 244 Z"/>
+          <path class="window" d="M302 199 C341 205 367 224 386 253 L293 249 Z"/>
+          <path class="blue-line" d="M96 313 H430"/>
+          <circle class="wheel" cx="158" cy="337" r="43"/><circle class="rim" cx="158" cy="337" r="22"/>
+          <circle class="wheel" cx="361" cy="337" r="43"/><circle class="rim" cx="361" cy="337" r="22"/>
+          <path class="light" d="M428 303 C451 306 463 313 471 326 H432 Z"/>
+          <text x="105" y="220" class="svg-label">TOUAREG 7P</text>
+          <text x="493" y="300" class="svg-label small">TA-NO STYLE TRAILER</text>
+        </svg>
+        <div class="hero-card-footer">
           <strong>Keeping Mansfield Moving</strong>
           <span>Recovery • Transport • Roadside Support</span>
         </div>
@@ -53,71 +87,83 @@
     </section>
 
     <section class="stats">
-      <div><strong>24/7</strong><span>Emergency support</span></div>
-      <div><strong>3.5T</strong><span>Trailer transport available</span></div>
-      <div><strong>Local</strong><span>Mansfield based</span></div>
-      <div><strong>Careful</strong><span>Safe loading & delivery</span></div>
+      <article><strong>24/7</strong><span>Recovery support</span></article>
+      <article><strong>3.5T</strong><span>Transport ready look</span></article>
+      <article><strong>Local</strong><span>Mansfield based</span></article>
+      <article><strong>Careful</strong><span>Secure loading</span></article>
     </section>
 
     <section id="services" class="section">
-      <div class="sectionHead">
+      <div class="section-head">
         <p class="eyebrow">What we do</p>
-        <h2>Recovery services built around your problem.</h2>
+        <h2>Recovery services built around speed, care and trust.</h2>
       </div>
-      <div class="grid services">
-        <article><span>🚗</span><h3>Vehicle Recovery</h3><p>Broken down, non-runner or stranded vehicle? We can collect and move it safely.</p></article>
-        <article><span>🚙</span><h3>Car Transport</h3><p>Door-to-door vehicle transport for purchases, garages, auctions and private jobs.</p></article>
-        <article><span>🔋</span><h3>Jump Starts</h3><p>Battery flat? Quick roadside help to get you moving where possible.</p></article>
-        <article><span>🛞</span><h3>Accident & Breakdown</h3><p>Calm, careful assistance when your day has gone wrong.</p></article>
-        <article><span>🧰</span><h3>Garage Delivery</h3><p>Transport your vehicle to your chosen garage or address.</p></article>
-        <article><span>📍</span><h3>Local & Long Distance</h3><p>Mansfield and surrounding areas, with longer distance jobs by arrangement.</p></article>
+      <div class="service-grid">
+        <article><span>01</span><h3>Vehicle Recovery</h3><p>Breakdown recovery for cars and light vehicles when you need help quickly and safely.</p></article>
+        <article><span>02</span><h3>Vehicle Transport</h3><p>Careful collection and delivery for non-running, purchased, sold or project vehicles.</p></article>
+        <article><span>03</span><h3>Roadside Support</h3><p>Helpful roadside assistance and guidance to get you moving or transported safely.</p></article>
+        <article><span>04</span><h3>Accident Recovery</h3><p>Calm, professional support after an incident, with careful handling from start to finish.</p></article>
       </div>
     </section>
 
-    <section id="coverage" class="section split">
+    <section id="coverage" class="split-section">
       <div>
         <p class="eyebrow">Coverage</p>
-        <h2>Mansfield, Nottinghamshire and beyond.</h2>
-        <p>Based around Mansfield, helping drivers, traders and customers with reliable vehicle recovery and transport.</p>
-        <ul class="ticks">
-          <li>Mansfield</li><li>Nottingham</li><li>Chesterfield</li><li>Worksop</li><li>Derby</li><li>Surrounding areas</li>
-        </ul>
+        <h2>Mansfield and surrounding areas.</h2>
+        <p>Based around Mansfield, Bogdan's Recovery Ltd is positioned to help drivers locally and across nearby towns. Call first for availability and an honest price.</p>
+        <div class="area-tags"><span>Mansfield</span><span>Sutton-in-Ashfield</span><span>Kirkby-in-Ashfield</span><span>Nottinghamshire</span><span>Chesterfield</span><span>Worksop</span></div>
       </div>
-      <div class="mapBox">
-        <div class="pin">📍</div>
-        <strong>Bogdan's Recovery Ltd</strong>
-        <span>Keeping Mansfield Moving</span>
+      <div class="map-card">
+        <div class="map-grid"></div>
+        <div class="pin"></div>
+        <strong>Mansfield</strong><span>Fast local response</span>
       </div>
     </section>
 
-    <section id="reviews" class="section reviews">
-      <div class="sectionHead">
-        <p class="eyebrow">Why choose us</p>
-        <h2>Honest recovery, careful loading, clear communication.</h2>
+    <section id="gallery" class="section dark-panel">
+      <div class="section-head">
+        <p class="eyebrow">Fleet style</p>
+        <h2>Professional recovery presence.</h2>
+        <p>Premium blue and black branding designed around a black Touareg and recovery trailer look.</p>
       </div>
-      <div class="grid reviewsGrid">
-        <article><div>★★★★★</div><p>“Quick response, professional and careful with the car.”</p><strong>Customer review</strong></article>
-        <article><div>★★★★★</div><p>“Friendly service and clear price. Would use again.”</p><strong>Customer review</strong></article>
-        <article><div>★★★★★</div><p>“Helped when I was stuck and got the car delivered safely.”</p><strong>Customer review</strong></article>
+      <div class="gallery-grid">
+        <div class="photo-card car-shot"><span>Black Touareg recovery setup</span></div>
+        <div class="photo-card trailer-shot"><span>Secure trailer transport</span></div>
+        <div class="photo-card night-shot"><span>24/7 roadside support</span></div>
       </div>
     </section>
 
-    <section id="contact" class="cta">
-      <p class="eyebrow">Need recovery now?</p>
-      <h2>Call Bogdan's Recovery Ltd and get moving again.</h2>
-      <p>For the fastest response, call or send your location on WhatsApp.</p>
-      <div class="actions center">
-        <a class="btn primary" href="tel:+447776462219">Call 07776 462219</a>
-        <a class="btn whatsapp" href="https://wa.me/447776462219" target="_blank" rel="noopener">Message on WhatsApp</a>
+    <section id="reviews" class="section">
+      <div class="section-head">
+        <p class="eyebrow">Reviews</p>
+        <h2>Built to look trustworthy before customers even call.</h2>
+      </div>
+      <div class="review-grid">
+        <article><div>★★★★★</div><p>“Fast response, careful loading and honest communication.”</p><strong>Local customer</strong></article>
+        <article><div>★★★★★</div><p>“Professional service and very helpful when I was stuck.”</p><strong>Recovery customer</strong></article>
+        <article><div>★★★★★</div><p>“Car transported safely and on time. Highly recommended.”</p><strong>Transport customer</strong></article>
+      </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+      <div>
+        <p class="eyebrow">Need recovery now?</p>
+        <h2>Call Bogdan's Recovery Ltd.</h2>
+        <p>Send your location, vehicle details and destination. You will get a clear answer and a fair price.</p>
+      </div>
+      <div class="contact-card">
+        <a class="btn primary full" href="tel:07776462219">Call 07776 462219</a>
+        <a class="btn whatsapp full" href="https://wa.me/447776462219">Message on WhatsApp</a>
+        <p><strong>WeTow-YouGo.</strong><br>Keeping Mansfield Moving.</p>
       </div>
     </section>
   </main>
 
-  <a class="floatCall" href="tel:+447776462219">📞 Call Now</a>
+  <a class="floating-call" href="tel:07776462219">☎ Call Now</a>
+
   <footer>
     <strong>Bogdan's Recovery Ltd</strong>
-    <span>WeTow-YouGo • Keeping Mansfield Moving • 07776 462219</span>
-    <small>© 2026 Bogdan's Recovery Ltd. All rights reserved.</small>
+    <span>© 2026 • WeTow-YouGo • Keeping Mansfield Moving</span>
   </footer>
 </body>
 </html>
